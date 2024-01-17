@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+ }
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    background-image: url("fundo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+
+
+
+
+
+#person .bloco-img {
+    height: 150vh;
+    width: 810px;
+ 
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 350px;
+    
+    display: flex;
+    justify-content: center;
+
+    border: 5px solid #fff;
+    box-shadow: 0 0 15px #d35400;
+
+    
+    
+}
+
+.titulo {
+    font-size: 60px;
+    font-family: fontetitulo;
+    text-align: center;
+    transform: translate(10px, 30px);
+    
+}
+
+
+#btn1 {
+    background-color: black;
+    margin-top: 200px;
+    margin-left: 200px;
+    position: absolute;
+    transform: translate(-50%, -260%);
+    padding: 6px 12px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px #d35400;
+
+
+    cursor: pointer;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 1.5em;
+       
+}
+
+.fa-brands {
+    color: #EF7527;
+    
+}
+.fa-solid {
+    color: #EF7527;
+}
+
+
+
+
+#btn2 {
+    background-color: black;
+    margin-top: 200px;
+    margin-left: 400px;
+    position: absolute;
+    transform: translate(-50%, -260%);
+    color: white;
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px #d35400;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 1.5em;
+    
+}
+
+#btn3 {
+    background-color: black;
+    margin-top: 200px;
+    margin-left: 600px;
+    position: absolute;
+    transform: translate(-50%, -260%);
+    color: white;
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px #d35400;
+    font-size: 1.8em;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 1.5em;
+}
+
+#btn4 {
+    background-color: black;
+    margin-top: 200px;
+    margin-left: 0px;
+    position: absolute;
+    transform: translate(-50%, -260%);
+    color: white;
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px #d35400;
+    font-size: 1.8em;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 1.5em;
+}
+
+#btn5 {
+    background-color: black;
+    margin-top: 200px;
+    margin-left: -200px;
+    position: absolute;
+    transform: translate(-50%, -260%);
+    color: white;
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px #d35400;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 1.5em;
+}
+
+#btn6 {
+    background-color: black;
+    margin-top: 200px;
+    margin-left: -400px;
+    position: absolute;
+    transform: translate(-50%, -260%);
+    color: white;
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px #d35400;
+    font-size: 1.8em;
+    padding: 6px 12px;
+
+    cursor: pointer;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 1.5em;
+}
+
+
+@media screen and (max-width: 768px) {
+    #person .bloco-img {
+        height: 60vh;
+        width: 110px;
+     
+        margin-bottom: 100px;
+        margin-top: 120px;
+        margin-left: 100px;
+        display: flex;
+
+        border: none;
+
+
+        
+    }
+
+    .titulo {
+        font-size: 30px;
+        font-family: fontetitulo;
+
+        transform: translate(-10px, 50px);
+
+        
+    }
+
+    #btn1 {
+        background-color: black;
+        margin-top: 200px;
+        position: absolute;
+        transform: translate(-45%, -630%);
+        padding: 6px 12px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 1em;
+           
+    }
+    
+    .fa-brands {
+        color: #EF7527;
+        
+    }
+    .fa-solid {
+        color: #EF7527;
+    }
+    
+    
+    
+    
+    #btn2 {
+        background-color: black;
+        margin-top: 200px;
+
+        position: absolute;
+        transform: translate(-170%, -630%);
+        color: white;
+        padding: 6px 12px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+    
+    #btn3 {
+        background-color: black;
+        margin-top: 200px;
+
+        position: absolute;
+        transform: translate(-680%, -630%);
+        color: white;
+        padding: 6px 12px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 1em;
+    }
+    
+    #btn4 {
+        background-color: black;
+        position: absolute;
+        transform: translate(-70%, -630%);
+        color: white;
+        font-size: 1.3em;
+        padding: 6px 12px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+
+    }
+    
+    #btn5 {
+        background-color: black;
+        margin-top: 200px;
+        margin-left: 0px;
+        position: absolute;
+        transform: translate(-200%, -630%);
+        color: white;
+        font-size: 1rem;
+        padding: 6px 12px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    
+    #btn6 {
+        background-color: black;
+        margin-top: 200px;
+        margin-left: 0px;
+        position: absolute;
+        transform: translate(-340%, -630%);
+        color: white;
+        padding: 6px 12px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    
+    
+}
+
+

@@ -176,13 +176,25 @@ body{
 
 
 @media screen and (max-width: 768px) {
+
+    body{
+        font-family: 'Poppins', sans-serif;
+        color: aliceblue;
+        background-image: url("fundo1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    
+    
+    }
+
     #person .bloco-img {
         height: 60vh;
         width: 110px;
      
         margin-bottom: 100px;
         margin-top: 120px;
-        margin-left: 100px;
+        margin-left: 150px;
         display: flex;
 
         border: none;

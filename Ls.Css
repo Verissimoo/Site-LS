@@ -190,14 +190,16 @@ body{
 
     #person .bloco-img {
         height: 60vh;
-        width: 110px;
+        width: 300px;
      
         margin-bottom: 100px;
         margin-top: 120px;
         margin-left: 135px;
         display: flex;
 
-        border: none;
+        
+        border: 5px solid #fff;
+        box-shadow: 0 0 15px #d35400;
 
 
         

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#body2 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    background-image: url("ensaiols5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    height: 80vh; /* Ocupa 100% da altura da janela */
+    padding-top: 20px; /* Adiciona um espaço no topo */
+}
+
+.titulo {
+    font-size: 60px;
+    font-family: fontetitulo;
+    text-align: center;
+    margin-bottom: px; /* Adiciona espaço abaixo do título */
+    color: white; /* Cor do texto */
+    text-shadow: 
+        -4px -4px 0 #d35400, /* Sombra para o canto superior esquerdo */
+        2px -2px 0 #d35400,  /* Sombra para o canto superior direito */
+        -2px 2px 0 #d35400,  /* Sombra para o canto inferior esquerdo */
+        2px 2px 0 #d35400;   /* Sombra para o canto inferior direito */
+}
+
+.carousel-item iframe {
+    width: 80%; /* Define a largura do vídeo como 80% do container pai */
+    height: 500px; /* Mantém a altura do vídeo */
+    margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+    display: block; /* Garante que o iframe seja tratado como um bloco */
+}
+
+.carousel-inner {
+    width: 100px;
+}

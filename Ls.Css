@@ -40,11 +40,45 @@ body {
     padding-top: 20px; /* Adiciona um espaço no topo */
 }
 
+#body3 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    background-image: url("ensaiols4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos na coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha os elementos no topo */
+    height: 150vh; /* Ocupa 100% da altura da janela */
+    padding-top: 20px; /* Adiciona um espaço no topo */
+    overflow: hidden;
+}
+
+#body4 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    background-image: url("lspb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos na coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha os elementos no topo */
+    height: 150vh; /* Ocupa 100% da altura da janela */
+    padding-top: 20px; /* Adiciona um espaço no topo */
+
+
+}
+
+
 .titulo {
     font-size: 60px;
     font-family: fontetitulo;
     text-align: center;
-    margin-bottom: -15px; /* Adiciona espaço abaixo do título */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
     color: white; /* Cor do texto */
     text-shadow: 
         -4px -4px 0 #d35400, /* Sombra para o canto superior esquerdo */
@@ -55,19 +89,12 @@ body {
 
 
 #subt{
-    font-size: 25px;
+    font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
 }
 
-.video-div {
-    padding: 0;
-    width: 790px;
-    text-align: center;
-    margin-bottom: 30px;
-    border: 5px solid #d35400;
-    box-shadow: 0 0 15px #ffffff;
-    margin-top: 20px;
-}
+
 
 .social-container {
     display: flex; /* Usa flexbox para alinhar os botões na horizontal */
@@ -125,12 +152,7 @@ body {
 
 .fa-brands, .fa-solid {
     color: #EF7527; /* Aplica a mesma cor para ícones */
-}
-.video-div {
-
-    
-
-}
+};
 
 .image-container {
     text-align: center; /* Centraliza a imagem */
@@ -190,23 +212,79 @@ body {
 }
 
 
-.video-container {
-    display: flex;
-    justify-content: center;
-    gap: 100px; /* Espaço entre as colunas */
-    padding: 20px;
-    
-}
-
-.video-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Espaço entre os vídeos */
-    
-}
-
 
 iframe {
-    border: 5px solid #d35400; /* Adiciona uma borda laranja */
+    border: 10px solid #000000; /* Adiciona uma borda laranja */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra para um efeito visual agradável */
+}
+
+#carouselExampleIndicators {
+    max-width: 100%; /* Definindo largura máxima de 80% da tela */
+    margin: auto; /* Centralizando horizontalmente */
+}
+
+
+.carousel-item iframe {
+    width: 60vw; /* Define a largura do vídeo como 80% do container pai */
+    height: 500px; /* Mantém a altura do vídeo */
+    margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+    display: block; /* Garante que o iframe seja tratado como um bloco */
+}
+
+
+.text-container {
+    max-width: 700px; /* Define a largura máxima para o contêiner de texto */
+    margin: 20px auto; /* Centraliza o contêiner na tela e adiciona margem superior */
+    padding: 10px 20px; /* Adiciona espaço ao redor do texto */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+    color: white; /* Cor do texto */
+    border-radius: 10px; /* Arredonda as bordas do contêiner */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Adiciona sombra para um efeito visual agradável */
+    margin-top: -10px;
+}
+
+.text-content {
+    font-family: 'Poppins', sans-serif; /* Fonte do texto */
+    font-size: 18px; /* Tamanho do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+#btnr {
+    margin-top: -10px;
+}
+
+
+.container {
+    display: flex; /* Exibe os contêineres em linha */
+    justify-content: space-around; /* Espaçamento entre os contêineres */
+    flex-wrap: wrap; /* Permite quebrar a linha se necessário */
+    margin: 20px; /* Margem ao redor da linha de contêineres */
+}
+
+.integrante {
+    background-color: rgba(255, 123, 7, 0.87); /* Fundo levemente transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px;
+    text-align: center; /* Centraliza o texto */
+    margin: 10px; /* Espaço entre os contêineres dos integrantes */
+    width: 18%; /* Largura de cada contêiner */
+}
+
+.integrante img {
+    max-width: 100%; /* A imagem ocupa a largura total do contêiner */
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+}
+
+.nome {
+    font-size: 22px; /* Tamanho do texto do nome */
+    margin-top: 10px; /* Espaço acima do nome */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto */
+    color: #ffffff; /* Cor do texto */
+}
+
+.descricao {
+    font-size: 14px; /* Tamanho do texto da descrição */
+    margin-top: 5px; /* Espaço acima da descrição */
+    color: #000000;
 }

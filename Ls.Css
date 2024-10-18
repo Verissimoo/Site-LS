@@ -329,9 +329,22 @@ iframe {
 
 /* Ajustes específicos para celulares (telas menores que 768px) */
 @media (max-width: 767px) {
+
     body {
-        overflow-x: hidden; /* Garante que não haverá scroll horizontal */
+        font-family: 'Poppins', sans-serif;
+        color: rgb(255, 255, 255);
+        background-image: url("ensaiols3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column; /* Alinha os elementos na coluna */
+        align-items: center; /* Centraliza horizontalmente */
+        justify-content: flex-start; /* Alinha os elementos no topo */
+        height: 100vh; /* Ocupa 100% da altura da janela */
+        padding-top: 20px; /* Adiciona um espaço no topo */
     }
+
 
     .text-container, .container, .integrante, iframe, .carousel {
         width: 100%; /* Ocupa toda a largura da tela */

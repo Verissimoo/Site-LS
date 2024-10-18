@@ -290,7 +290,7 @@ iframe {
 }
 
 /* Ajustes gerais para telas menores (tablets e celulares) */
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
     .titulo {
         font-size: 40px; /* Reduz o tamanho da fonte do título */
     }
@@ -328,26 +328,38 @@ iframe {
 }
 
 /* Ajustes específicos para celulares (telas menores que 768px) */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden; /* Garante que não haverá scroll horizontal */
+    }
+
+    .text-container, .container, .integrante, iframe, .carousel {
+        width: 100%; /* Ocupa toda a largura da tela */
+        max-width: 100%; /* Não ultrapassa a largura da tela */
+    }
+
     .titulo {
-        font-size: 30px; /* Reduz ainda mais o tamanho da fonte do título */
-    }
-
-    .text-content {
-        font-size: 16px; /* Ajusta o tamanho do texto principal */
-    }
-
-    .integrante {
-        width: 95%; /* Ocupa quase toda a largura da tela */
-        margin: 5px; /* Reduz o espaçamento entre os integrantes */
+        font-size: 28px; /* Reduz o tamanho do título */
     }
 
     .rect-btn {
-        padding: 10px 10px; /* Reduz ainda mais o padding */
-        font-size: 14px; /* Ajusta o tamanho da fonte dos botões */
+        font-size: 16px; /* Ajusta o tamanho dos botões */
+        width: 100%; /* Deixa os botões ocuparem toda a largura */
+        padding: 10px; /* Ajusta o padding */
     }
 
     iframe {
-        height: 200px; /* Ajusta a altura do iframe para telas bem pequenas */
+        width: 100vw; /* A largura do vídeo ocupará toda a largura disponível */
+        height: 200px; /* Ajusta a altura para manter a proporção adequada */
+    }
+
+    .container {
+        flex-direction: column; /* Alinha os integrantes em uma coluna */
+        align-items: center; /* Centraliza o conteúdo */
+    }
+
+    .integrante {
+        width: 90%; /* Ajusta a largura dos cards de integrantes */
+        margin: 5px; /* Reduz as margens laterais */
     }
 }

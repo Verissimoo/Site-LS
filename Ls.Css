@@ -288,3 +288,66 @@ iframe {
     margin-top: 5px; /* Espaço acima da descrição */
     color: #000000;
 }
+
+/* Ajustes gerais para telas menores (tablets e celulares) */
+@media (max-width: 1024px) {
+    .titulo {
+        font-size: 40px; /* Reduz o tamanho da fonte do título */
+    }
+
+    .text-container {
+        max-width: 90%; /* Aumenta a largura para telas menores */
+    }
+
+    .container {
+        flex-direction: column; /* Muda os contêineres para uma única coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .integrante {
+        width: 80%; /* Aumenta a largura para ocupar mais espaço nas telas menores */
+    }
+
+    .descricao {
+        font-size: 12px; /* Ajusta o tamanho do texto da descrição para telas menores */
+    }
+
+    .rect-btn {
+        padding: 15px 15px; /* Reduz o padding dos botões retangulares */
+        font-size: 16px; /* Ajusta o tamanho da fonte para botões menores */
+    }
+
+    .carousel-image {
+        width: 100%; /* Ajusta a largura das imagens do carrossel para ocupar a tela toda */
+    }
+
+    iframe {
+        width: 90vw; /* Ajusta a largura do iframe para telas menores */
+        height: 300px; /* Ajusta a altura do iframe para ficar proporcional */
+    }
+}
+
+/* Ajustes específicos para celulares (telas menores que 768px) */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 30px; /* Reduz ainda mais o tamanho da fonte do título */
+    }
+
+    .text-content {
+        font-size: 16px; /* Ajusta o tamanho do texto principal */
+    }
+
+    .integrante {
+        width: 95%; /* Ocupa quase toda a largura da tela */
+        margin: 5px; /* Reduz o espaçamento entre os integrantes */
+    }
+
+    .rect-btn {
+        padding: 10px 10px; /* Reduz ainda mais o padding */
+        font-size: 14px; /* Ajusta o tamanho da fonte dos botões */
+    }
+
+    iframe {
+        height: 200px; /* Ajusta a altura do iframe para telas bem pequenas */
+    }
+}

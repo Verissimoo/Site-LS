@@ -380,14 +380,9 @@ iframe {
         gap: 20px; /* Espaçamento entre os botões */
         margin-top: 20px; /* Adiciona espaço acima da barra de botões */
         margin-left: 200px;
-        text-align: right;
+        text-align: center;
     }
     
-    .main-btn {
-        margin-left: 200px;
-        text-align: right;
-        
-    }
 
     
 }

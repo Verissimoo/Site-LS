@@ -334,18 +334,16 @@ iframe {
     body {
         max-width: 100%; /* Garante que o corpo não ultrapasse a largura da tela */
         overflow-x: hidden; /* Evita barras de rolagem horizontais */
-        padding: 0; /* Remove o padding do body se houver */
     }
 
     .text-container, .container, .integrante, iframe, .carousel {
         width: 100%; /* Ocupa toda a largura da tela */
         max-width: 100%; /* Não ultrapassa a largura da tela */
-        box-sizing: border-box; /* Inclui padding e borda no cálculo de largura */
     }
 
     .titulo {
         font-size: 50px; /* Reduz o tamanho do título */
-        margin-left: 0; /* Remove a margem esquerda */
+        margin-left: 20px; /* Mantém a margem esquerda */
         text-align: center;
     }
 
@@ -359,7 +357,6 @@ iframe {
     iframe {
         width: 100%; /* A largura do vídeo ocupará toda a largura disponível */
         height: 200px; /* Ajusta a altura para manter a proporção adequada */
-        border: none; /* Remove borda do iframe, se necessário */
     }
 
     .container {
@@ -372,26 +369,19 @@ iframe {
         margin: 5px; /* Reduz as margens laterais */
     }
 
+    /* Estilo para a barra de redes sociais */
     .social-container {
-        gap: 20px; /* Espaçamento entre os botões */
+        display: flex; /* Mantém os botões em uma linha */
+        justify-content: center; /* Centraliza os botões horizontalmente */
         margin-top: 20px; /* Adiciona espaço acima da barra de botões */
-        margin-left: 0; /* Remove a margem esquerda */
-        flex-direction: column; /* Alinha os botões na vertical */
-        align-items: center; /* Centraliza os botões */
+        flex-wrap: wrap; /* Permite que os botões quebrem linha se necessário */
     }
 
-    /* Para que o Instagram fique acima do YouTube e o Telefone acima do Spotify */
-    .social-container .main-btn:nth-child(1) {
-        order: 1; /* Instagram acima */
-    }
-    .social-container .main-btn:nth-child(2) {
-        order: 2; /* Telefone acima */
-    }
-    .social-container .main-btn:nth-child(3) {
-        order: 3; /* YouTube abaixo */
-    }
-    .social-container .main-btn:nth-child(4) {
-        order: 4; /* Spotify abaixo */
-    }
+    .social-container .main-btn {
+        flex: 1; /* Faz com que os botões ocupem o mesmo espaço */
+        margin: 5px; /* Espaço entre os botões */
+        width: auto; /* Permite que a largura dos botões seja automática */
+       
     
+
 }

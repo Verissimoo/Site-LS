@@ -377,29 +377,29 @@ iframe {
     }
 
     .social-container {
-        display: grid; /* Alteramos para grid no modo responsivo */
-        grid-template-columns: 1fr 1fr; /* Dois botões por linha */
-        gap: 10px; /* Ajusta o espaçamento entre os botões */
+        display: flex; /* Usa flexbox para alinhar os botões na horizontal */
+        gap: 20px; /* Espaçamento entre os botões */
+        justify-content: center; /* Centraliza os botões horizontalmente */
+        margin-top: 20px; /* Adiciona espaço acima da barra de botões */
+        margin-left: 20px;
+    }
+    
+    .main-btn {
+        background-color: black;
+        border: 3px solid #d35400;
+        box-shadow: 0 0 15px #000000;
+        color: #ffffff;
+        padding: 10px 15px; /* Ajusta o padding para todos os botões */
+        border-radius: 50%;
+        font-size: 1.5em;
+        cursor: pointer;
+        width: 70px; /* Define a largura dos botões */
+        height: 70px; /* Define a altura dos botões */
+        display: flex; /* Permite que o conteúdo do botão seja centralizado */
+        align-items: center; /* Centraliza verticalmente o conteúdo */
+        justify-content: center; /* Centraliza horizontalmente o conteúdo */
+        
     }
 
-    /* Aqui definimos a ordem específica dos botões sem mexer no HTML */
-    #instagram {
-        grid-column: 1 / 2; /* Instagram na primeira coluna */
-        grid-row: 1 / 2;    /* Primeira linha */
-    }
-
-    #youtube {
-        grid-column: 2 / 3; /* YouTube na segunda coluna */
-        grid-row: 1 / 2;    /* Primeira linha */
-    }
-
-    #telefone {
-        grid-column: 1 / 2; /* Telefone na primeira coluna */
-        grid-row: 2 / 3;    /* Segunda linha */
-    }
-
-    #spotify {
-        grid-column: 2 / 3; /* Spotify na segunda coluna */
-        grid-row: 2 / 3;    /* Segunda linha */
-    }
+    
 }

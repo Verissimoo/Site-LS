@@ -375,4 +375,31 @@ iframe {
         width: 90%; /* Ajusta a largura dos cards de integrantes */
         margin: 5px; /* Reduz as margens laterais */
     }
+
+    .social-container {
+        display: grid; /* Alteramos para grid no modo responsivo */
+        grid-template-columns: 1fr 1fr; /* Dois botões por linha */
+        gap: 10px; /* Ajusta o espaçamento entre os botões */
+    }
+
+    /* Aqui definimos a ordem específica dos botões sem mexer no HTML */
+    #instagram {
+        grid-column: 1 / 2; /* Instagram na primeira coluna */
+        grid-row: 1 / 2;    /* Primeira linha */
+    }
+
+    #youtube {
+        grid-column: 2 / 3; /* YouTube na segunda coluna */
+        grid-row: 1 / 2;    /* Primeira linha */
+    }
+
+    #telefone {
+        grid-column: 1 / 2; /* Telefone na primeira coluna */
+        grid-row: 2 / 3;    /* Segunda linha */
+    }
+
+    #spotify {
+        grid-column: 2 / 3; /* Spotify na segunda coluna */
+        grid-row: 2 / 3;    /* Segunda linha */
+    }
 }

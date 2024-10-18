@@ -331,7 +331,6 @@ iframe {
 
     body {
         max-width: 100%; /* Garante que o corpo não ultrapasse a largura da tela */
-        overflow-x: hidden; /* Evita barras de rolagem horizontais */
         padding: 0; /* Remove o padding do body se houver */
     }
 
@@ -386,6 +385,20 @@ iframe {
     .social-container .main-btn {
         display: inline-block; /* Permite que os botões fiquem lado a lado */
     }
+
+    .text-container {
+        margin-top: 20px;
+    }
+
+    .text-content {
+        font-size: 14px; /* Tamanho do texto */
+        line-height: 1.6; /* Espaçamento entre linhas */
+    }
+
+    #btnr {
+        margin-left: 0px;
+    }
+
 
 
 

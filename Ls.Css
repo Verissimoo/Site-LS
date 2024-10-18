@@ -331,7 +331,8 @@ iframe {
 @media (max-width: 767px) {
 
     body {
-        overflow-x: hidden; /* Garante que não haverá scroll horizontal */
+        max-width: 100%; /* Garante que o corpo não ultrapasse a largura da tela */
+        overflow-x: hidden; /* Evita barras de rolagem horizontais */
     }
 
 
@@ -343,6 +344,7 @@ iframe {
     .titulo {
         font-size: 50px; /* Reduz o tamanho do título */
         margin-left: 20px;
+        text-align: center;
     }
 
     .rect-btn {

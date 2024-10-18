@@ -342,6 +342,7 @@ iframe {
 
     .titulo {
         font-size: 50px; /* Reduz o tamanho do título */
+        margin-left: 20px;
     }
 
     .rect-btn {

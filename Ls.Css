@@ -321,41 +321,45 @@ iframe {
         width: 100%; /* Ajusta a largura das imagens do carrossel para ocupar a tela toda */
     }
 
-    iframe {
-        width: 90vw; /* Ajusta a largura do iframe para telas menores */
-        height: 300px; /* Ajusta a altura do iframe para ficar proporcional */
-    }
+    
 }
 
 /* Ajustes específicos para celulares (telas menores que 768px) */
 @media (max-width: 767px) {
 
 
+
     body {
         max-width: 100%; /* Garante que o corpo não ultrapasse a largura da tela */
         overflow-x: hidden; /* Evita barras de rolagem horizontais */
+        padding: 0; /* Remove o padding do body se houver */
     }
 
     .text-container, .container, .integrante, iframe, .carousel {
         width: 100%; /* Ocupa toda a largura da tela */
         max-width: 100%; /* Não ultrapassa a largura da tela */
+        box-sizing: border-box; /* Inclui padding e borda no cálculo de largura */
     }
 
     .titulo {
         font-size: 50px; /* Reduz o tamanho do título */
-        margin-left: 20px; /* Mantém a margem esquerda */
+        margin-left: 0; /* Remove a margem esquerda */
         text-align: center;
+        margin-bottom: -10px;
+        margin-top: 15px;
     }
 
     .rect-btn {
         font-size: 16px; /* Ajusta o tamanho dos botões */
-        width: 100%; /* Deixa os botões ocuparem toda a largura */
+        width: 120%; /* Deixa os botões ocuparem toda a largura */
         padding: 10px; /* Ajusta o padding */
         margin: 5px 0; /* Espaço entre os botões */
+        margin-left: 30px;
+        
     }
 
     iframe {
-        width: 100%; /* A largura do vídeo ocupará toda a largura disponível */
+        width: 800%; /* A largura do vídeo ocupará toda a largura disponível */
         height: 200px; /* Ajusta a altura para manter a proporção adequada */
     }
 
@@ -369,19 +373,58 @@ iframe {
         margin: 5px; /* Reduz as margens laterais */
     }
 
-    /* Estilo para a barra de redes sociais */
     .social-container {
-        display: flex; /* Mantém os botões em uma linha */
-        justify-content: center; /* Centraliza os botões horizontalmente */
+        gap: 20px; /* Espaçamento entre os botões */
         margin-top: 20px; /* Adiciona espaço acima da barra de botões */
-        flex-wrap: wrap; /* Permite que os botões quebrem linha se necessário */
+        margin-left: 0; /* Remove a margem esquerda */
+        flex-direction: row; /* Alinha os botões na vertical */
+        align-items: center; /* Centraliza os botões */
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .social-container .main-btn {
-        flex: 1; /* Faz com que os botões ocupem o mesmo espaço */
-        margin: 5px; /* Espaço entre os botões */
-        width: auto; /* Permite que a largura dos botões seja automática */
-       
-    
+        display: inline-block; /* Permite que os botões fiquem lado a lado */
+    }
+
+
+
+
+ /* Altera a ordem dos botões para garantir que eles apareçam corretamente */
+.social-container .main-btn:nth-child(1) {
+    order: 1; /* Instagram acima */
+}
+.social-container .main-btn:nth-child(2) {
+    order: 2; /* Telefone acima */
+}
+.social-container .main-btn:nth-child(3) {
+    order: 3; /* YouTube abaixo */
+}
+.social-container .main-btn:nth-child(4) {
+    order: 4; /* Spotify abaixo */
+}
+
+/* Adiciona uma regra para ajustar a largura dos botões */
+.social-container .main-btn {
+    max-width: 100%; /* Define uma largura que permita que os botões fiquem lado a lado */
 
 }
+.button-group {
+    margin-right: 100px;
+}
+
+.carousel-item iframe {
+    width: 80vw; /* Define a largura do vídeo como 80% do container pai */
+    height: 300px; /* Mantém a altura do vídeo */
+    margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+    display: block; /* Garante que o iframe seja tratado como um bloco */
+}
+
+#subt{
+   
+    margin-bottom: -170px;
+}
+
+}
+    
+

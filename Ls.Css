@@ -379,11 +379,11 @@ iframe {
     .social-container {
         gap: 20px; /* Espaçamento entre os botões */
         margin-top: 20px; /* Adiciona espaço acima da barra de botões */
-        margin-left: 60px;
+        margin-left: -80px;
     }
     
     .main-btn {
-        margin-left: 60px;
+        margin-left: -80px;
         
     }
 
